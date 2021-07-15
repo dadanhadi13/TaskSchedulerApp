@@ -1,0 +1,2 @@
+rootProject.name = "TaskSchedulerApp"
+include ':app'
