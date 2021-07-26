@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bottom"
+    app:startDestination="@id/dashboard">
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.kelompok5.taskschedulerapp.Hal_Dashboard"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/tanggal"
+        android:name="com.kelompok5.taskschedulerapp.Hal_Tanggal"
+        android:label="fragment_tanggal"
+        tools:layout="@layout/fragment_tanggal" />
+    <fragment
+        android:id="@+id/profil"
+        android:name="com.kelompok5.taskschedulerapp.Hal_Profil"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+</navigation>
