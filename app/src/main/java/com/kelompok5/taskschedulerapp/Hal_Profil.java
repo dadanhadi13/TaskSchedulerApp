@@ -16,6 +16,6 @@ public class Hal_Profil extends Fragment {
     public View onCreateView(@Nullable LayoutInflater inflater, ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profil, container, false);
+        return inflater.inflate(R.layout.activity_profile, container, false);
     }
 }

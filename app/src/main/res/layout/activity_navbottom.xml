@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="#f9f5f2"
-        app:menu="@menu/button_nav"/>
+        app:menu="@menu/button_nav" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container"

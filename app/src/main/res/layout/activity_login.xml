@@ -5,23 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".login">
+    tools:context=".Hal_Login">
 <!--penambahan comment-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="270dp"
-        android:background="#fffff"
+        android:background="#ffffff"
         android:layout_gravity="center">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/image"
-        android:layout_marginBottom="16dp"
-        android:layout_centerHorizontal="true"
-        android:text="Form Login"
-        android:textSize="20dp"
-        android:textStyle="bold"/>
 
         <ImageView
             android:id="@+id/image"
@@ -40,20 +30,32 @@
         android:orientation="vertical">
 
         <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Form Login"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#222831"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="15dp"
             android:text="Username"
-            android:textColor="#fff"/>
+            android:textColor="#222831"/>
 
         <EditText
+            android:id="@+id/tx_username"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:id="@id/username"
             android:background="@drawable/border"
             android:hint="username"
             android:inputType="text"
+            android:layout_marginTop="10dp"
             android:paddingLeft="10dp"/>
 
         <RelativeLayout
@@ -65,16 +67,17 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="15dp"
-            android:text="password"
-            android:textColor="#fff"/>
+            android:text="Password"
+            android:textColor="#222831"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:id="@+id/password"
+            android:id="@+id/tx_password"
             android:background="@drawable/border"
             android:hint="password"
             android:inputType="textPassword"
+            android:layout_marginTop="10dp"
             android:paddingLeft="10dp"/>
 
         <RelativeLayout
@@ -87,10 +90,10 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@id/login"
+                android:id="@+id/btn_login"
                 android:layout_width="185dp"
                 android:layout_height="40dp"
-                android:background="@drawable/button"
+                android:background="@drawable/button_login"
                 android:padding="8dp"
                 android:text="Log-In"
                 android:textColor="#fff"
@@ -103,11 +106,10 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:id="@id/exit"
-                android:background="@drawable/button"
+                android:background="@drawable/btn_exit"
                 android:padding="6dp"
                 android:text="exit"
-                android:textColor="#fff"
+                android:textColor="#222831"
                 android:textStyle="bold"/>
 
         </LinearLayout>

@@ -3,15 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/dashboard"
-          android:title="Dashboard"
+          android:title="@string/dashboard"
           android:icon="@drawable/ic_dashboard"/>
 
     <item android:id="@+id/tanggal"
-          android:title="Tanggal"
+          android:title="@string/kalender"
           android:icon="@drawable/ic_calendar" />
 
     <item android:id="@+id/profil"
-          android:title="Profil"
-          android:icon="@drawable/ic_profil"/>
+          android:title="@string/profile"
+          android:icon="@drawable/ic_profile"/>
 
 </menu>
