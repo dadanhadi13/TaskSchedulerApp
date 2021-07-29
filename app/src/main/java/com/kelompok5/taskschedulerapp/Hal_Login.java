@@ -2,17 +2,22 @@ package com.kelompok5.taskschedulerapp;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Hal_Login extends AppCompatActivity {
     EditText username, password;
     Button btn_login;
+    TextView btn_signup;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +26,7 @@ public class Hal_Login extends AppCompatActivity {
         username = findViewById(R.id.tx_username);
         password = findViewById(R.id.tx_password);
         btn_login = findViewById(R.id.btn_login);
+        btn_signup = findViewById(R.id.tx_signup);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +44,13 @@ public class Hal_Login extends AppCompatActivity {
                     builder.setMessage("Username atau Password Anda salah!")
                             .setNegativeButton("Retry", null).create().show();
                 }
+            }
+        });
+
+        btn_signup.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent in2 = new Intent(Hal_Login.this, Hal_Register.class);
+                Hal_Login.this.startActivity(in2);
             }
         });
     }
