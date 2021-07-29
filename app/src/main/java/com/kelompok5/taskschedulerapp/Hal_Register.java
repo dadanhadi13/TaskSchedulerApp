@@ -49,8 +49,8 @@ public class Hal_Register extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in2 = new Intent(Hal_Register.this, Hal_Login.class);
-                Hal_Register.this.startActivity(in2);
+                Intent in1 = new Intent(Hal_Register.this, Hal_Login.class);
+                Hal_Register.this.startActivity(in1);
             }
         });
     }
