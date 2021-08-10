@@ -4,12 +4,16 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.kelompok5.taskschedulerapp.R.id;
 import com.kelompok5.taskschedulerapp.R.layout;
 
 public class NavBottom extends AppCompatActivity{
+
+    Fragment fragment = null;
+    FragmentManager fragmentManager;
 
     @SuppressLint("NonConstantResourceId")
     @Override

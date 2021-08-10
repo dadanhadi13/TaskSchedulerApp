@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:textSize="18dp"
+            android:textSize="16dp"
             android:text="Username"
             android:textColor="#222831"
             android:layout_marginBottom="10dp"/>
@@ -52,89 +52,74 @@
         <EditText
             android:id="@+id/tx_usernameReg"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="40dp"
             android:background="@drawable/border"
             android:hint="username"
             android:inputType="text"
             android:paddingLeft="10dp"
-            android:textSize="18dp"
+            android:textSize="16dp"
             android:layout_marginBottom="20dp"/>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:textSize="18dp"
+            android:textSize="16dp"
             android:text="Email"
             android:textColor="#222831"
             android:layout_marginBottom="10dp"/>
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="40dp"
             android:id="@+id/tx_email"
             android:background="@drawable/border"
             android:hint="example@company.com"
             android:inputType="textEmailAddress"
             android:paddingStart="10dp"
-            android:textSize="18dp"
+            android:textSize="16dp"
             android:layout_marginBottom="20dp"/>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:textSize="18dp"
+            android:textSize="16dp"
             android:text="Password"
             android:textColor="#222831"
             android:layout_marginBottom="10dp"/>
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="40dp"
             android:id="@+id/tx_passwordReg"
             android:background="@drawable/border"
             android:hint="password"
             android:inputType="textPassword"
             android:layout_marginBottom="20dp"
             android:paddingStart="10dp"
-            android:textSize="18dp"/>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="10dp"/>
+            android:textSize="16dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:textSize="18dp"
+            android:textSize="16dp"
             android:text="Confirm Password"
             android:textColor="#222831"
             android:layout_marginBottom="10dp"/>
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="40dp"
             android:id="@+id/tx_cpassword"
             android:background="@drawable/border"
             android:hint="confirm password"
             android:inputType="textPassword"
             android:layout_marginBottom="20dp"
             android:paddingStart="10dp"
-            android:textSize="18dp"/>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"/>
+            android:textSize="16dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -151,7 +136,7 @@
                 android:textColor="#fff"
                 android:textStyle="bold"
                 android:textAllCaps="false"
-                android:textSize="18dp"/>
+                android:textSize="16dp"/>
 
             <Button
                 android:id="@+id/back"
@@ -163,17 +148,13 @@
                 android:textColor="#222831"
                 android:textStyle="bold"
                 android:textAllCaps="false"
-                android:textSize="18dp"/>
+                android:textSize="16dp"/>
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-
         </LinearLayout>
-
-
-
     </LinearLayout>
 
 </LinearLayout>

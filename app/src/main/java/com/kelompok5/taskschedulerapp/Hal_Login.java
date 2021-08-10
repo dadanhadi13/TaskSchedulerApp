@@ -49,8 +49,8 @@ public class Hal_Login extends AppCompatActivity {
 
         btn_signup.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent in2 = new Intent(Hal_Login.this, Hal_Register.class);
-                Hal_Login.this.startActivity(in2);
+                Intent in = new Intent(Hal_Login.this, Hal_Register.class);
+                Hal_Login.this.startActivity(in);
             }
         });
     }

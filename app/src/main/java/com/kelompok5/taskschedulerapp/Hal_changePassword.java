@@ -1,15 +1,15 @@
 package com.kelompok5.taskschedulerapp;
 
-import android.annotation.SuppressLint;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
 
-class Hal_changePassword {
+public class Hal_changePassword extends AppCompatActivity {
 
-
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.changepassword);
+    }
 }
-
 

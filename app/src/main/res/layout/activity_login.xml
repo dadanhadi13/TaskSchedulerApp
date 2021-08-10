@@ -9,7 +9,7 @@
 <!--penambahan comment-->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="270dp"
+        android:layout_height="150dp"
         android:background="#ffffff"
         android:layout_gravity="center">
 
