@@ -8,4 +8,5 @@
     <string name="btn_pass">Change Password</string>
     <string name="btn_setting">Setting</string>
     <string name="btn_logout">Log Out</string>
+    <string name="todo">Todo</string>
 </resources>

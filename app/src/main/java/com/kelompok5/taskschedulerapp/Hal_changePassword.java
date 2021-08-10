@@ -7,7 +7,16 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-class Hal_changePassword {
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+
+class Hal_changePassword extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.changepassword);
+    }
 
 
 }
