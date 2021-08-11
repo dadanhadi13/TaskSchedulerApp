@@ -11,8 +11,8 @@ import android.widget.Button;
 public class Hal_Profil extends Fragment {
 
     public Intent in, in2;
-    public Button btn_changepass, btn_editprofile;
-    public Hal_Profil() {
+    public Button btn_logout, btn_changepass, btn_editprofile;
+    public Hal_Profil()
 
     }
 
