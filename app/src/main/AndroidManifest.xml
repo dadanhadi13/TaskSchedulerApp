@@ -18,7 +18,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".NavBottom" />
-        <activity android:name=".Hal_Register" />
     </application>
 
 </manifest>

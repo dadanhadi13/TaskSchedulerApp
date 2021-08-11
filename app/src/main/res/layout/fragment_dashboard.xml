@@ -37,7 +37,7 @@
             android:layout_below="@+id/text"
             android:layout_marginStart="20dp"
             android:layout_marginTop="25dp"
-            android:text="Todo"
+            android:text="@string/todo"
             android:textColor="@color/black"
             android:textSize="20dp" />
 
@@ -56,15 +56,16 @@
                     android:nestedScrollingEnabled="true"/>
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/button_add"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="80dp"
                     android:backgroundTint="@color/blue"
                     app:borderWidth="0dp"
-                    android:src="@drawable/ic_add"/>
+                    android:src="@drawable/ic_add" />
 
 
         </RelativeLayout>
