@@ -18,6 +18,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".NavBottom" />
+        <activity android:name=".Hal_Register" />
+        <activity android:name=".Hal_add"
+            android:theme="@style/Theme.PopUp"/>
     </application>
 
 </manifest>
