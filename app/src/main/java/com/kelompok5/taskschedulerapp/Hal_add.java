@@ -8,12 +8,12 @@ import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.WindowManager;
 
-public class Hal_add extends Activity {
+public class Hal_add extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add);
+        setContentView(R.layout.fragment_profil);
 
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getRealMetrics(dm);
@@ -26,4 +26,6 @@ public class Hal_add extends Activity {
         getWindow().setAttributes(params);
 
     }
+
+
 }

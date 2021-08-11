@@ -4,15 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/pop_bg"
-    android:layout_gravity="center"
-    tools:context=".Hal_add">
+    android:padding="10dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Buat Task Baru"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
 
     <LinearLayout
         android:id="@+id/titleLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="10dp"
         android:layout_marginStart="10dp"
         android:orientation="horizontal">
@@ -23,13 +31,14 @@
             android:layout_margin="16dp"
             android:src="@drawable/ic_tugas" />
 
-        <TextView
-            android:id="@+id/tugas"
+        <EditText
+            android:id="@+id/task"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
             android:background="@drawable/form"
-            android:text="Task"
+            android:hint="Task"
+            android:textSize="15dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp" />
     </LinearLayout>
@@ -56,6 +65,7 @@
             android:paddingLeft="10dp"
             android:background="@drawable/form"
             android:text="Tanggal"
+            android:textSize="15dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp" />
     </LinearLayout>
@@ -82,19 +92,10 @@
             android:paddingLeft="10dp"
             android:background="@drawable/form"
             android:text="Waktu"
+            android:textSize="15dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp" />
-    </LinearLayout>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="15dp"
-        android:text="Add Task"
-        android:layout_below="@+id/waktu"
-        android:background="@drawable/form" />
+    </LinearLayout>
 
 </RelativeLayout>
