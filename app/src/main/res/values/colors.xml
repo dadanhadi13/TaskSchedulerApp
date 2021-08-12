@@ -13,5 +13,7 @@
     <color name="old_purple">#EAE8FF</color>
     <color name="blue">#00A3FA</color>
     <color name="green">#54e37a</color>
+    <color name="dark_gray">#808080</color>
+    <color name="gray">#4D4D4D</color>
 
 </resources>

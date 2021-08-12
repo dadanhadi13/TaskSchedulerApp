@@ -19,6 +19,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
+import android.widget.AbsListView;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -55,6 +56,7 @@ public class Hal_Dashboard extends Fragment {
         btnAdd = rootView.findViewById(R.id.button_add);
 
         populateListView();
+        hideBtn();
         onBtnAddclick();
 
         return rootView;
@@ -91,6 +93,23 @@ public class Hal_Dashboard extends Fragment {
 
     }
 
+    private void hideBtn() {
+        lsView.setOnScrollListener(new AbsListView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(AbsListView view, int scrollState) {
+                if (scrollState == SCROLL_STATE_IDLE) {
+                    btnAdd.show();
+                } else {
+                    btnAdd.hide();
+                }
+            }
+
+            @Override
+            public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+            }
+        });
+    }
+
     private void onBtnAddclick() {
         try {
             btnAdd.setOnClickListener(new View.OnClickListener() {
@@ -120,7 +139,7 @@ public class Hal_Dashboard extends Fragment {
         String dateString = dateSdf.format(date);
         tanggal.setText((dateString));
 
-        SimpleDateFormat timeSdf = new SimpleDateFormat("hh : mm a");
+        SimpleDateFormat timeSdf = new SimpleDateFormat("H : mm");
         String timeString = timeSdf.format(date);
         waktu.setText(timeString);
 
@@ -156,22 +175,17 @@ public class Hal_Dashboard extends Fragment {
                             @Override
                             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
                                 String time;
-                                @SuppressLint("DefaultLocale") String minTime = String.format("%02d", minute);
-                                if (hourOfDay >= 0 && hourOfDay < 12) {
-                                    time = hourOfDay + ":" + minTime + "AM";
-                                } else {
-                                    if (hourOfDay != 12) {
-                                        hourOfDay = hourOfDay - 12;
-                                    }
-                                    time = hourOfDay + ":" + minTime + "PM";
+                                @SuppressLint("DefaultLocale") String minTime = String.format("%02d", minute);{
+                                  time = hourOfDay + ":" + minTime;
                                 }
+
                                 waktu.setText(time);
                                 cal.set(Calendar.HOUR, hourOfDay);
                                 cal.set(Calendar.MINUTE, minute);
                                 cal.set(Calendar.SECOND, 0);
                                 Log.d(TAG, "onTimeSet: Time has been set successfully");
                             }
-                        }, cal.get(Calendar.HOUR), cal.get(Calendar.MINUTE), false);
+                        }, cal.get(Calendar.HOUR), cal.get(Calendar.MINUTE), true);
                 timePickerDialog.show();
             }
         });

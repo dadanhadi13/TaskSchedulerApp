@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -49,6 +50,16 @@ public class AdapterData extends BaseAdapter {
         TextView titletextView = convertView.findViewById(R.id.titleList);
         TextView dateTextView = convertView.findViewById(R.id.dateList);
         TextView timeTextView = convertView.findViewById(R.id.timeList);
+        RadioButton dellTask = convertView.findViewById(R.id.Rbutton);
+        dellTask.setTag(position);
+
+        dellTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final int pos = (int) v.getTag();
+                deleteItem(pos);
+            }
+        });
 
         Modeldata modelData = arrayList.get(position);
         titletextView.setText(modelData.getTitle());
@@ -67,10 +78,10 @@ public class AdapterData extends BaseAdapter {
         DatabaseHelper databaseHelper = new DatabaseHelper(context);
         try {
             databaseHelper.deleteData(id);
-            toastMsg("Tugas di hapus");
+            toastMsg("Tugas berhasil diselesaikan");
         } catch (Exception e) {
             e.printStackTrace();
-            toastMsg("Ada kesalahan saat menghapus data");
+            toastMsg("Ada kesalahan saat menyelesaikan task");
         }
     }
 

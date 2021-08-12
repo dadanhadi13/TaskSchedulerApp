@@ -4,43 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp"
-    android:background="@color/white">
+    android:background="@drawable/bg_shadow">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:text="Buat Task Baru"
-        android:textSize="15dp"
+        android:textSize="20dp"
         android:textStyle="bold"/>
 
     <LinearLayout
         android:id="@+id/titleLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="20dp"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="16dp"
-            android:src="@drawable/ic_tugas" />
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_task" />
 
         <EditText
             android:id="@+id/title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
+            android:layout_height="35dp"
+            android:paddingStart="15dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/form"
             android:hint="Task"
-            android:textSize="15dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp" />
+            android:textSize="20dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -48,26 +48,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
         android:layout_below="@+id/titleLayout"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="16dp"
-            android:background="@drawable/ic_tanggal" />
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/ic_tgl" />
 
         <TextView
             android:id="@+id/date"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
+            android:layout_height="35dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/form"
             android:text="Tanggal"
-            android:textSize="15dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp" />
+            android:textSize="20dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -75,26 +78,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="20dp"
         android:layout_below="@+id/dateLayout"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="20dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/ic_waktu" />
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/ic_jam" />
 
         <TextView
             android:id="@+id/time"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
+            android:layout_height="35dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="35dp"
             android:background="@drawable/form"
             android:text="Waktu"
-            android:textSize="15dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp" />
+            android:textSize="20dp" />
 
     </LinearLayout>
 
