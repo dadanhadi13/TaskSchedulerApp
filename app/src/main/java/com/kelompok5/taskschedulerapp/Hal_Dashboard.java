@@ -111,7 +111,7 @@ public class Hal_Dashboard extends Fragment {
         final View dialogView = inflater.inflate(R.layout.activity_add, null);
         dialogBuilder.setView(dialogView);
 
-        final EditText tugas = dialogView.findViewById(R.id.task);
+        final EditText tugas = dialogView.findViewById(R.id.title);
         final TextView tanggal = dialogView.findViewById(R.id.date);
         final TextView waktu = dialogView.findViewById(R.id.time);
 

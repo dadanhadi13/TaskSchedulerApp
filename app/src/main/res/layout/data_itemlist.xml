@@ -7,7 +7,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp">
+        android:layout_marginEnd="15dp"
+        android:background="@color/cream">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,21 +20,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
                 android:text="Task"
                 android:textSize="25dp"
                 android:textStyle="bold"
                 android:textAllCaps="false"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/black"
+                android:visibility="visible"/>
 
             <TextView
                 android:id="@+id/dateList"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginBottom="25dp"
+                android:layout_marginBottom="15dp"
                 android:text="Date"
-                android:textSize="25dp"
+                android:textSize="15dp"
                 android:textStyle="bold"/>
 
             <TextView
@@ -41,13 +51,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginBottom="25dp"
+                android:layout_marginBottom="15dp"
                 android:text="Time"
-                android:textSize="25dp"
+                android:textSize="15dp"
                 android:textStyle="bold"/>
 
         </LinearLayout>
-
 
     </RelativeLayout>
 
