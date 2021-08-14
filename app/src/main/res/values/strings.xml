@@ -9,4 +9,9 @@
     <string name="btn_setting">Setting</string>
     <string name="btn_logout">Log Out</string>
     <string name="todo">Todo</string>
+    <string name="hi">Hi</string>
+    <string name="nama">Nama</string>
+    <string name="title">Title</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="waktu">Waktu</string>
 </resources>

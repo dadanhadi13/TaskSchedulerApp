@@ -19,8 +19,10 @@
         <activity android:name=".NavBottom" />
         <activity android:name=".Hal_Register" />
         <activity android:name=".Hal_EditProfil"/>
+        <activity android:name=".Hal_ChangePassword"/>
         <activity android:name=".Hal_add"
             android:theme="@style/Theme.PopUp"/>
+        <receiver android:name=".NotifyTask"/>
     </application>
 
 </manifest>

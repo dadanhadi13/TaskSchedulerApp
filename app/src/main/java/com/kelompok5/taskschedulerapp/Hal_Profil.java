@@ -33,7 +33,7 @@ public class Hal_Profil extends Fragment {
         btn_changepass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                in2 = new Intent(getActivity(), Hal_changePassword.class);
+                in2 = new Intent(getActivity(), Hal_ChangePassword.class);
                 startActivity(in2);
             }
         });

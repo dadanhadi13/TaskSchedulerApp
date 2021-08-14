@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/bg_shadow">
+    android:layout_height="wrap_content">
 
     <TextView
         android:layout_width="wrap_content"
@@ -12,7 +11,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:text="Buat Task Baru"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"/>
 
     <LinearLayout
@@ -39,8 +38,9 @@
             android:layout_marginStart="12dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/form"
-            android:hint="Task"
-            android:textSize="20dp" />
+            android:hint="@string/title"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
     </LinearLayout>
 
     <LinearLayout
@@ -69,8 +69,8 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/form"
-            android:text="Tanggal"
-            android:textSize="20dp" />
+            android:text="@string/tanggal"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -96,11 +96,33 @@
             android:paddingTop="2dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="35dp"
+            android:layout_marginBottom="25dp"
             android:background="@drawable/form"
-            android:text="Waktu"
-            android:textSize="20dp" />
+            android:text="@string/waktu"
+            android:textSize="20sp" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/addTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waktu"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="Add Task"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_add" />
+
+    <ImageView
+        android:id="@+id/btnclose"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp" />
+
 
 </RelativeLayout>

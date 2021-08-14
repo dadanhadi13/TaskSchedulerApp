@@ -10,22 +10,34 @@
     tools:context=".Hal_Dashboard">
 
         <TextView
-            android:id="@+id/text"
+            android:id="@+id/txtHi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="30dp"
-            android:text="Hi Nama"
+            android:text="@string/hi"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="25dp"/>
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@id/txtHi"
+            android:text="@string/nama"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
             android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
             android:layout_marginTop="30dp"
             android:src="@drawable/ic_profile"
             app:civ_border_color="#FF000000"
@@ -35,12 +47,12 @@
             android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/text"
+            android:layout_below="@+id/txtHi"
             android:layout_marginStart="20dp"
             android:layout_marginTop="25dp"
             android:text="@string/todo"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -70,7 +82,8 @@
                     android:layout_marginBottom="80dp"
                     android:backgroundTint="@color/blue"
                     app:borderWidth="0dp"
-                    android:src="@drawable/ic_add" />
+                    android:src="@drawable/ic_add"
+                    android:contentDescription="@string/todo" />
 
 
         </RelativeLayout>

@@ -1,9 +1,7 @@
 package com.kelompok5.taskschedulerapp;
 
 import android.annotation.SuppressLint;
-import android.content.ClipData;
 import android.content.Context;
-import android.graphics.ColorSpace;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,8 +15,8 @@ import java.util.ArrayList;
 
 public class AdapterData extends BaseAdapter {
 
-    private Context context;
-    private ArrayList<Modeldata> arrayList;
+    private final Context context;
+    private final ArrayList<Modeldata> arrayList;
 
     public AdapterData(Context context, ArrayList<Modeldata> arrayList){
         super();
@@ -53,12 +51,9 @@ public class AdapterData extends BaseAdapter {
         RadioButton dellTask = convertView.findViewById(R.id.Rbutton);
         dellTask.setTag(position);
 
-        dellTask.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final int pos = (int) v.getTag();
-                deleteItem(pos);
-            }
+        dellTask.setOnClickListener(v -> {
+            final int pos = (int) v.getTag();
+            deleteItem(pos);
         });
 
         Modeldata modelData = arrayList.get(position);
@@ -78,7 +73,7 @@ public class AdapterData extends BaseAdapter {
         DatabaseHelper databaseHelper = new DatabaseHelper(context);
         try {
             databaseHelper.deleteData(id);
-            toastMsg("Tugas berhasil diselesaikan");
+            toastMsg("Task berhasil diselesaikan");
         } catch (Exception e) {
             e.printStackTrace();
             toastMsg("Ada kesalahan saat menyelesaikan task");
