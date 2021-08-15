@@ -14,7 +14,7 @@ public class Hal_EditProfil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editprofil);
 
-        Button btn_kembali = (Button)findViewById(R.id.kembali);
+        Button btn_kembali = findViewById(R.id.kembali);
         btn_kembali.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
