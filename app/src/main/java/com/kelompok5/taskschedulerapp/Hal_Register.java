@@ -2,7 +2,6 @@ package com.kelompok5.taskschedulerapp;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -34,12 +33,12 @@ public class Hal_Register extends AppCompatActivity {
                 String cpasswordKey = cpassword.getText().toString();
                 String emailKey = email.getText().toString();
 
-                if(usernameKey.equals("") && passwordKey.equals("") && emailKey.equals("") && cpasswordKey.equals("")) {
+                if(usernameKey.equals("") || passwordKey.equals("") || emailKey.equals("") || cpasswordKey.equals("")) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(Hal_Register.this);
-                    builder.setMessage("All data must be filled")
+                    builder.setMessage("Data harus terisi semua")
                             .setNegativeButton("Retry", null).create().show();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Create Account Successful", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Pembuatan akun berhasil", Toast.LENGTH_SHORT).show();
                     Intent in = new Intent(Hal_Register.this, NavBottom.class);
                     Hal_Register.this.startActivity(in);
                     finish();

@@ -16,7 +16,7 @@ public class Hal_add extends AppCompatActivity{
         setContentView(R.layout.fragment_profil);
 
         DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getRealMetrics(dm);
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
 
         WindowManager.LayoutParams params = getWindow().getAttributes();
         params.gravity = Gravity.CENTER;

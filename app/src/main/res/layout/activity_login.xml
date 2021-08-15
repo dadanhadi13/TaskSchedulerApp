@@ -53,9 +53,10 @@
             android:id="@+id/tx_username"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@drawable/border"
+            android:background="@drawable/styletextfield"
             android:inputType="text"
             android:textSize="18dp"
+            android:hint="username"
             android:layout_marginTop="10dp"
             android:paddingLeft="10dp"
             android:layout_marginBottom="20dp"/>
@@ -76,7 +77,8 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:id="@+id/tx_password"
-            android:background="@drawable/border"
+            android:background="@drawable/styletextfield"
+            android:hint="password"
             android:inputType="textPassword"
             android:textSize="18dp"
             android:layout_marginTop="10dp"
@@ -95,23 +97,24 @@
                 android:id="@+id/btn_login"
                 android:layout_width="185dp"
                 android:layout_height="60dp"
-                android:background="@drawable/button_login"
+                android:background="@drawable/button_primary"
                 android:padding="8dp"
-                android:text="Log In"
+                android:text="Masuk"
                 android:textColor="#fff"
                 android:textStyle="bold"
                 android:textSize="18dp"
                 android:textAllCaps="false"/>
 
             <Button
+                android:id="@+id/btn_keluar"
                 android:layout_width="100dp"
                 android:layout_height="60dp"
                 android:background="@drawable/btn_exit"
-                android:text="Exit"
+                android:text="Keluar"
                 android:textColor="#222831"
                 android:textStyle="bold"
                 android:textSize="18dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="30dp"
                 android:textAllCaps="false"/>
 
             <RelativeLayout
@@ -129,7 +132,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have account?"
+                android:text="Belum memiliki akun?"
                 android:layout_marginTop="20dp"
                 android:textColor="@color/black"
                 android:textSize="20dp"/>
@@ -138,7 +141,7 @@
                 android:id="@+id/tx_signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign Up"
+                android:text="Registrasi"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"

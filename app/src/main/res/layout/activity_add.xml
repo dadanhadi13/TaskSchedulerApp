@@ -111,7 +111,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="25dp"
-        android:text="Add Task"
+        android:text="Tambah Task"
         android:textColor="@color/white"
         android:background="@drawable/btn_add" />
 

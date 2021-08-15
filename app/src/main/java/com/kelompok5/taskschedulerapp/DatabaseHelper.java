@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    private static final String TAG = "DatabaseHelper";
+    public static final String TAG = "DatabaseHelper";
 
     private static final String TABLE_NAME ="ToDo_Table";
     private static final String COL1 = "ID";
@@ -26,16 +26,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db){
-        String createTable ="CREATE TABLE "+ TABLE_NAME + "(" + COL1 + " integer primary key, " +
-                                                                COL2 + " TEXT, " +
-                                                                COL3 + " DATE, " +
-                                                                COL4 + " TIME" + ")";
-        Log.d(TAG, "Creating table" + createTable);
+        String createTable ="CREATE TABLE "+ TABLE_NAME + "(" + COL1+"integer primary key,"
+                + COL2 +" TEXT,"
+                + COL3 +"DATE,"
+                + COL4 +" TIME"+")";
+        Log.d(TAG, "Creating table"+createTable);
         db.execSQL(createTable);
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
+    public void onUpgrade(SQLiteDatabase db, int i, int i1){
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
@@ -46,13 +46,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(COL2, item);
         contentValues.put(COL3, date);
         contentValues.put(COL4, time);
-        Log.d(TAG, "insetData: Inserting " + item + " to " + TABLE_NAME);
+        Log.d(TAG, "insetData: Inserting"+ item +"to"+TABLE_NAME);
         long result = db.insert(TABLE_NAME, null, contentValues);
         db.close();
         return result !=-1;
     }
 
-    void deleteData(int id){
+  void deleteData(int id){
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_NAME, COL1 + "=" + id, null);
     }
