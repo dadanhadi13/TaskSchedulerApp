@@ -6,12 +6,46 @@
     tools:context=".Hal_Tanggal">
 
     <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtSd"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="menu tanggal"
-        android:fontFamily="sans-serif-black"
-        android:textSize="30dp"/>
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/schedule"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <CalendarView
+        android:id="@+id/cdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dateTextAppearance="@style/MythemeDate"
+        android:weekDayTextAppearance="@style/MythemeWeek"
+        android:layout_below="@id/txtSd"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/txtEvt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cdView"
+        android:layout_marginStart="30dp"
+        android:text="@string/event"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <ListView
+        android:id="@+id/Rview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="70dp"
+        android:layout_below="@id/txtEvt"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"/>
 
 </RelativeLayout>

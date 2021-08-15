@@ -11,7 +11,10 @@
     <string name="todo">Todo</string>
     <string name="hi">Hi</string>
     <string name="nama">Nama</string>
-    <string name="title">Title</string>
     <string name="tanggal">Tanggal</string>
     <string name="waktu">Waktu</string>
+    <string name="schedule">Schedule</string>
+    <string name="event">Event</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
 </resources>

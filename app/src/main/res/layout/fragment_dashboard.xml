@@ -6,7 +6,6 @@
     android:id="@+id/Relativelayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pop_bg2"
     tools:context=".Hal_Dashboard">
 
         <TextView
@@ -84,7 +83,6 @@
                     app:borderWidth="0dp"
                     android:src="@drawable/ic_add"
                     android:contentDescription="@string/todo" />
-
 
         </RelativeLayout>
 
